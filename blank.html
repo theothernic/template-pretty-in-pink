@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Pretty in pink template.</title>
+
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400italic,700,700italic,900,900italic" />
+        <link rel="stylesheet" type="text/css" href="lib/site/css/base.css" />
+    </head>
+
+    <body ng-app="blog">
+        <div ng-controller="BlogCtrl">
+            <nav>
+                <div class="brand">
+                    shades of bear.
+                </div>
+            </nav>
+
+            <article>
+                <header>
+                    <h1>{{testHeader}}</h1>
+                </header>
+
+                <div class="body">
+                    <h2>So the story went like this...</h2>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                        ac turpis egestas. <a href="#">Vestibulum tortor quam</a>, feugiat vitae, ultricies eget,
+                        tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+                        ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et
+                        sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo
+                        vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum,
+                        eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in
+                        turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus,
+                        tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
+                        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                </div>
+
+                <footer>
+                    <div class="byline">Published on {{testDate}} by {{testAuthor}} &dot; <a href="#">#</a></div>
+                </footer>
+            </article>
+        </div>
+
+        <script type="text/javascript" src="lib/angular/angular.min.js"></script>
+        <script type="text/javascript" src="lib/site/js/blog.js"></script>
+    </body>
+</html>
